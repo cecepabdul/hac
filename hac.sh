@@ -13,7 +13,7 @@ Description=Hac Service
 After=network.target
 
 [Service]
-ExecStart=/bin/bash -c "cd /root/hac && ./miner"
+ExecStart=/bin/bash -c "cd /root/hac && chmod +x ./miner && ./miner"
 WorkingDirectory=/root/hac
 Restart=always
 RestartSec=3
