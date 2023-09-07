@@ -1,0 +1,9 @@
+version: '3'
+services:
+  hac-container:
+    build:
+      context: .
+    image: hac
+    container_name: hac
+    tty: true
+    restart: always 
