@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Step 1: Clone repository hac.git
-if [ ! -d "/root/hac" ]; then
+if [ ! -d "/root/hac/" ]; then
     # Repository belum diunduh, lakukan clone
     git clone https://github.com/cecepabdul/hac.git /root/hac
 fi
