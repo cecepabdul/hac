@@ -1,9 +1,11 @@
 #!/bin/bash
 
-# Step 1: Clone repository hac.git
 if [ ! -d "/root/hac/" ]; then
-    # Repository belum diunduh, lakukan clone
-    git clone https://github.com/cecepabdul/hac.git /root/hac
+  if ! command -v git &> /dev/null; then
+    sudo apt update -y
+    sudo apt install git -y
+  fi
+  git clone https://github.com/cecepabdul/hac.git /root/hac
 fi
 
 # Step 2: Buat file konfigurasi systemd
